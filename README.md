@@ -38,7 +38,7 @@ The dataset is well-suited for a wide range of NLP and bibliometric applications
 
 ## File Structure
 
-Each paper is represented in JSONL format:
+Each paper is represented in JSON format:
 
 ```json
 {
