@@ -59,7 +59,7 @@ Each paper is represented in JSON format:
     "update_date": "2024-12-03",
     "authors_parsed": [ ... ],
     "language": "en",
-    "citation_count": 5,
+    "cited_by_count": 25,
     "discipline": "Computer Science"
   },
   "abstract": "...",
