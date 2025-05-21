@@ -1,7 +1,7 @@
 # UnarXive-2024
 This project presents an updated and extended version of the UnarXive dataset, a large-scale full-text scholarly corpus derived from [arXiv.org](https://arxiv.org). We process and structure over 2.3 million papers, preserving rich document content and enriching metadata. Our pipeline enhances section-level grouping while maintaining compatibility with existing formats.
 
-## 📦 Dataset Overview
+## Dataset Overview
 
 The dataset consists of structured JSONL files, each representing a parsed scholarly document from arXiv. Each document includes:
 
@@ -12,19 +12,19 @@ The dataset consists of structured JSONL files, each representing a parsed schol
 - Licensing and category labels
 ---
 
-## 📈 Growth Statistics
+## Growth Statistics
 
 As of 2022, UnarXive had indexed **1,882,082** papers. Between **January 2023** and **December 2024**, an additional **456,829** papers were submitted. The number of submissions continues to grow exponentially (see Figure 1).
 
 This brings the total number of papers in our dataset to **2,338,911**.
 
 Among these:
-- 📘 **Physics**: 1,146,066 papers (49.12%)
-- 🧮 **Mathematics**: 584,727 papers (25.28%)
-- 💻 **Computer Science**: 608,118 papers (25,6%)
+- **Physics**: 1,146,066 papers (49.12%)
+- **Mathematics**: 584,727 papers (25.28%)
+- **Computer Science**: 608,118 papers (25,6%)
 ---
 
-## 🧠 Use Cases
+## Use Cases
 
 The dataset is well-suited for a wide range of NLP and bibliometric applications:
 
@@ -36,7 +36,7 @@ The dataset is well-suited for a wide range of NLP and bibliometric applications
 
 ---
 
-## 🗃️ File Structure
+## File Structure
 
 Each paper is represented in JSONL format:
 
