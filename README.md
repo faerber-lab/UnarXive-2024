@@ -12,28 +12,13 @@ The dataset consists of structured JSONL files, each representing a parsed schol
 - Licensing and category labels
 ---
 
-## Growth Statistics
+## Key Statistics
 
-As of 2022, UnarXive had indexed **1,882,082** papers. Between **January 2023** and **December 2024**, an additional **456,829** papers were submitted. The number of submissions continues to grow exponentially (see Figure 1).
-
-This brings the total number of papers in our dataset to **2,338,911**.
-
+The total number of papers in our dataset is **2,338,911**.
 Among these:
 - **Physics**: 1,146,066 papers (49.12%)
 - **Mathematics**: 584,727 papers (25.28%)
 - **Computer Science**: 608,118 papers (25,6%)
----
-
-## Use Cases
-
-The dataset is well-suited for a wide range of NLP and bibliometric applications:
-
-- Citation recommendation
-- Section-aware classification
-- Scientific summarization
-- Network analysis
-- Trend detection in research fields
-
 ---
 
 ## File Structure
