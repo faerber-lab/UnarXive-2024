@@ -22,5 +22,8 @@ Among these:
 - **Physics**: 1,146,066 papers (49.12%)
 - **Mathematics**: 584,727 papers (25.28%)
 - **Computer Science**: 608,118 papers (25,6%)
+
+**Languages:** Predominantly English, with several hundred documents in other languages. 
+ 
 ---
 
