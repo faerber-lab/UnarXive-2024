@@ -22,5 +22,14 @@ Among these:
 - **Physics**: 1,146,066 papers (49.12%)
 - **Mathematics**: 584,727 papers (25.28%)
 - **Computer Science**: 608,118 papers (25,6%)
+
+**Languages**: Predominantly English, with several hundred documents in other languages
+
 ---
 
+## Usage
+The dataset can be used for:
+- Retrieval-augmented generation (RAG)
+- Citation recommendation and analysis
+- Scientific question answering
+- Training and evaluation of domain-specific language models (e.g., SciBERT, SciNCL)
