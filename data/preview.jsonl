@@ -1,0 +1,838 @@
+{
+  "paper_id": "2310.00826",
+  "_pdf_hash": null,
+  "_source_hash": "4ae0ff64e1a0ff37f27c02c8a40d7bd589b326cf",
+  "_source_name": "2310.00826.gz",
+  "metadata": {
+    "id": "2310.00826",
+    "submitter": "Matt Allen",
+    "authors": "Matt Allen, Francisco Dorr, Joseph A. Gallego-Mejia, Laura\n  Mart\\'inez-Ferrer, Anna Jungbluth, Freddie Kalaitzis, Ra\\'ul Ramos-Poll\\'an",
+    "title": "Large Scale Masked Autoencoding for Reducing Label Requirements on SAR\n  Data",
+    "comments": "12 pages, 6 figures. Tackling Climate Change with Machine Learning:\n  Workshop at NeurIPS 2023",
+    "journal-ref": null,
+    "doi": null,
+    "report-no": null,
+    "categories": "cs.CV eess.IV",
+    "license": "http://creativecommons.org/licenses/by/4.0/",
+    "abstract": "  Satellite-based remote sensing is instrumental in the monitoring and\nmitigation of the effects of anthropogenic climate change. Large scale, high\nresolution data derived from these sensors can be used to inform intervention\nand policy decision making, but the timeliness and accuracy of these\ninterventions is limited by use of optical data, which cannot operate at night\nand is affected by adverse weather conditions. Synthetic Aperture Radar (SAR)\noffers a robust alternative to optical data, but its associated complexities\nlimit the scope of labelled data generation for traditional deep learning. In\nthis work, we apply a self-supervised pretraining scheme, masked autoencoding,\nto SAR amplitude data covering 8.7\\% of the Earth's land surface area, and tune\nthe pretrained weights on two downstream tasks crucial to monitoring climate\nchange - vegetation cover prediction and land cover classification. We show\nthat the use of this pretraining scheme reduces labelling requirements for the\ndownstream tasks by more than an order of magnitude, and that this pretraining\ngeneralises geographically, with the performance gain increasing when tuned\ndownstream on regions outside the pretraining set. Our findings significantly\nadvance climate change mitigation by facilitating the development of task and\nregion-specific SAR models, allowing local communities and organizations to\ndeploy tailored solutions for rapid, accurate monitoring of climate change\neffects.\n",
+    "versions": [
+      {
+        "version": "v1",
+        "created": "Mon, 2 Oct 2023 00:11:47 GMT"
+      },
+      {
+        "version": "v2",
+        "created": "Tue, 28 Nov 2023 02:13:40 GMT"
+      },
+      {
+        "version": "v3",
+        "created": "Sun, 3 Dec 2023 00:28:25 GMT"
+      },
+      {
+        "version": "v4",
+        "created": "Mon, 30 Sep 2024 14:34:28 GMT"
+      }
+    ],
+    "update_date": "2024-10-01",
+    "authors_parsed": [
+      [
+        "Allen",
+        "Matt",
+        ""
+      ],
+      [
+        "Dorr",
+        "Francisco",
+        ""
+      ],
+      [
+        "Gallego-Mejia",
+        "Joseph A.",
+        ""
+      ],
+      [
+        "Martínez-Ferrer",
+        "Laura",
+        ""
+      ],
+      [
+        "Jungbluth",
+        "Anna",
+        ""
+      ],
+      [
+        "Kalaitzis",
+        "Freddie",
+        ""
+      ],
+      [
+        "Ramos-Pollán",
+        "Raúl",
+        ""
+      ]
+    ],
+    "language": "en",
+    "cited_by_count": 1,
+    "discipline": "Computer Science"
+  },
+  "abstract": {
+    "section": "Abstract",
+    "text": "  Satellite-based remote sensing is instrumental in the monitoring and\nmitigation of the effects of anthropogenic climate change. Large scale, high\nresolution data derived from these sensors can be used to inform intervention\nand policy decision making, but the timeliness and accuracy of these\ninterventions is limited by use of optical data, which cannot operate at night\nand is affected by adverse weather conditions. Synthetic Aperture Radar (SAR)\noffers a robust alternative to optical data, but its associated complexities\nlimit the scope of labelled data generation for traditional deep learning. In\nthis work, we apply a self-supervised pretraining scheme, masked autoencoding,\nto SAR amplitude data covering 8.7\\% of the Earth's land surface area, and tune\nthe pretrained weights on two downstream tasks crucial to monitoring climate\nchange - vegetation cover prediction and land cover classification. We show\nthat the use of this pretraining scheme reduces labelling requirements for the\ndownstream tasks by more than an order of magnitude, and that this pretraining\ngeneralises geographically, with the performance gain increasing when tuned\ndownstream on regions outside the pretraining set. Our findings significantly\nadvance climate change mitigation by facilitating the development of task and\nregion-specific SAR models, allowing local communities and organizations to\ndeploy tailored solutions for rapid, accurate monitoring of climate change\neffects.\n",
+    "cite_spans": [],
+    "ref_spans": []
+  },
+  "bib_entries": {
+    "b1c06b34d06c7653e80ab0839d5dfa8930fb80f9": {
+      "bib_entry_raw": "Markus Immitzer, Francesco Vuolo, and Clement Atzberger. First Experience with Sentinel-2 Data for Crop and Tree Species Classifications in Central Europe. Remote Sensing, 8(3):166, February 2016. ISSN 2072-4292. doi: 10.3390/rs8030166. URL http://www.mdpi.com/2072-4292/8/3/166.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W2273708466",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.3390/rs8030166",
+        "arxiv_id": ""
+      }
+    },
+    "af2293d1c79fd5889a6e2ea5ee52db4c61070451": {
+      "bib_entry_raw": "Anders U. Waldeland, Øivind Due Trier, and Arnt-Børre Salberg. Forest mapping and monitoring in Africa using Sentinel-2 data and deep learning. International Journal of Applied Earth Observation and Geoinformation, 111:102840, July 2022. ISSN 1569-8432. doi: 10.1016/j.jag.2022.102840. URL https://www.sciencedirect.com/science/article/pii/S1569843222000425.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4281695804",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1016/j.jag.2022.102840",
+        "arxiv_id": ""
+      }
+    },
+    "9408887baa2ad2f1fd2c346e444602352ca7a3a2": {
+      "bib_entry_raw": "Xikun Hu, Yifang Ban, and Andrea Nascetti. Sentinel-2 MSI data for active fire detection in major fire-prone biomes: A multi-criteria approach. International Journal of Applied Earth Observation and Geoinformation, 101:102347, September 2021. ISSN 1569-8432. doi: 10.1016/j.jag.2021.102347. URL https://www.sciencedirect.com/science/article/pii/S0303243421000544.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3160602444",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1016/j.jag.2021.102347",
+        "arxiv_id": ""
+      }
+    },
+    "f9b10a76aab2bcecea95fe3b295b678bce574411": {
+      "bib_entry_raw": "Angelica Tarpanelli, Alessandro C. Mondini, and Stefania Camici. Effectiveness of Sentinel-1 and Sentinel-2 for flood detection assessment in Europe. Natural Hazards and Earth System Sciences, 22(8):2473–2489, August 2022. ISSN 1684-9981. doi: 10.5194/nhess-22-2473-2022. URL https://nhess.copernicus.org/articles/22/2473/2022/.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4289867705",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.5194/nhess-22-2473-2022",
+        "arxiv_id": ""
+      }
+    },
+    "259dff436aa779781c6715f564307e3b41be92f7": {
+      "bib_entry_raw": "Friederike E.L. Otto, Geert Jan Van Oldenborgh, Jonathan M. Eden, Peter A. Stott, David J. Karoly, and Myles R. Allen. The Attribution Question. Nature Climate Change, 6(9):813–816, August 2016. ISSN 1758-678X. doi: 10.1038/nclimate3089.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W2508006223",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1038/nclimate3089",
+        "arxiv_id": ""
+      }
+    },
+    "717a4db728e0e684cfefe8821e63dae3d4a8a559": {
+      "bib_entry_raw": "Ben Clarke, Friederike Otto, Rupert Stuart-Smith, and Luke Harrington. Extreme Weather Impacts of Climate Change: An Attribution Perspective. Environmental Research: Climate, 1(1):012001, June 2022. ISSN 2752-5295. doi: 10.1088/2752-5295/ac6e7d. URL https://dx.doi.org/10.1088/2752-5295/ac6e7d. Publisher: IOP Publishing.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4283641177",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1088/2752-5295/ac6e7d",
+        "arxiv_id": ""
+      }
+    },
+    "9423b7fbc18f4753d70f740358b4d409f1173893": {
+      "bib_entry_raw": "Craig D. Allen, David D. Breshears, and Nate G. McDowell. On Underestimation of Global Vulnerability to Tree Mortality and Forest Die-Off from Hotter Drought in the Anthropocene. Ecosphere, 6(8):art129, 2015. ISSN 2150-8925. doi: 10.1890/ES15-00203.1. URL https://onlinelibrary.wiley.com/doi/abs/10.1890/ES15-00203.1. _eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1890/ES15-00203.1.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "",
+        "arxiv_id": ""
+      }
+    },
+    "173a4c1cf0d55ca7290fb6cb2315b2d5f6112023": {
+      "bib_entry_raw": "Fanny Moffette, Jennifer Alix-Garcia, Katherine Shea, and Amy H. Pickens. The Impact of Near-Real-Time Deforestation Alerts Across the Tropics. Nature Climate Change, 11(2):172–178, February 2021. ISSN 1758-6798. doi: 10.1038/s41558-020-00956-w. URL https://www.nature.com/articles/s41558-020-00956-w. Number: 2 Publisher: Nature Publishing Group.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3120961911",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1038/s41558-020-00956-w",
+        "arxiv_id": ""
+      }
+    },
+    "26bceef523acef2dec8e35057ecaacb9e92da1ac": {
+      "bib_entry_raw": "Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever. Learning Transferable Visual Models From Natural Language Supervision, February 2021. URL http://arxiv.org/abs/2103.00020. arXiv:2103.00020 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3166396011",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.48550/arxiv.2103.00020",
+        "arxiv_id": ""
+      }
+    },
+    "bc90937654eed0d92c99eb35c4b8bd540650cbc6": {
+      "bib_entry_raw": "Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollár, and Ross Girshick. Masked Autoencoders Are Scalable Vision Learners, December 2021. URL http://arxiv.org/abs/2111.06377. arXiv:2111.06377 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4313156423",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/cvpr52688.2022.01553",
+        "arxiv_id": ""
+      }
+    },
+    "2455c2b4215132403c03a167231765f18468f6a8": {
+      "bib_entry_raw": "Mathilde Caron, Hugo Touvron, Ishan Misra, Hervé Jégou, Julien Mairal, Piotr Bojanowski, and Armand Joulin. Emerging Properties in Self-Supervised Vision Transformers, May 2021. URL http://arxiv.org/abs/2104.14294. arXiv:2104.14294 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3159481202",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/iccv48922.2021.00951",
+        "arxiv_id": ""
+      }
+    },
+    "b45923c8ba4fc0eff3631d1e4d8abe0b2ddbf8e7": {
+      "bib_entry_raw": "Wenhui Wang, Hangbo Bao, Li Dong, Johan Bjorck, Zhiliang Peng, Qiang Liu, Kriti Aggarwal, Owais Khan Mohammed, Saksham Singhal, Subhojit Som, and Furu Wei. Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks, August 2022a. URL http://arxiv.org/abs/2208.10442. arXiv:2208.10442 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4292945941",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.48550/arxiv.2208.10442",
+        "arxiv_id": ""
+      }
+    },
+    "1c1e294ce21e5f36da3ee6858172f7700bf8b988": {
+      "bib_entry_raw": "Jiahui Yu, Zirui Wang, Vijay Vasudevan, Legg Yeung, Mojtaba Seyedhosseini, and Yonghui Wu. CoCa: Contrastive Captioners are Image-Text Foundation Models, June 2022. URL http://arxiv.org/abs/2205.01917. arXiv:2205.01917 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4229042118",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.48550/arxiv.2205.01917",
+        "arxiv_id": ""
+      }
+    },
+    "2a0ac32adce91d962adc497bfe1f94cd68a6a7c6": {
+      "bib_entry_raw": "Yi Wang, Conrad M. Albrecht, Nassim Ait Ali Braham, Lichao Mou, and Xiao Xiang Zhu. Self-Supervised Learning in Remote Sensing: A Review. IEEE Geoscience and Remote Sensing Magazine, September 2022b. doi: 10.48550/arXiv.2206.13188. URL http://arxiv.org/abs/2206.13188. arXiv:2206.13188 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4283697304",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/mgrs.2022.3198244",
+        "arxiv_id": ""
+      }
+    },
+    "91c8487c1137c03f11b3b1a042abf276d140ede2": {
+      "bib_entry_raw": "Yuxing Chen and Lorenzo Bruzzone. Self-Supervised SAR-Optical Data Fusion of Sentinel-1/-2 Images. IEEE Transactions on Geoscience and Remote Sensing, 60:1–11, 2022. ISSN 1558-0644. doi: 10.1109/TGRS.2021.3128072. URL https://ieeexplore.ieee.org/abstract/document/9614157?casa_token=IFz7EwnWRncAAAAA:IWgKysklytWiT4jG_SQjA_TPbBj8W8vh7BARKqg_evLBYdfptu3cLAVpFkp1rRWL7e3ccRF8. Conference Name: IEEE Transactions on Geoscience and Remote Sensing.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3212022090",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/tgrs.2021.3128072",
+        "arxiv_id": ""
+      }
+    },
+    "5dfb023b4dae283c2d1645630a1dbe702c229df9": {
+      "bib_entry_raw": "Xian Sun, Peijin Wang, Wanxuan Lu, Zicong Zhu, Xiaonan Lu, Qibin He, Junxi Li, Xuee Rong, Zhujun Yang, Hao Chang, Qinglin He, Guang Yang, Ruiping Wang, Jiwen Lu, and Kun Fu. RingMo: A Remote Sensing Foundation Model With Masked Image Modeling. IEEE Transactions on Geoscience and Remote Sensing, 61:1–22, 2023. ISSN 1558-0644. doi: 10.1109/TGRS.2022.3194732. URL https://ieeexplore.ieee.org/abstract/document/9844015?casa_token=WT6lAEysCCMAAAAA:JogMRpJAY1TME0QIJ4bBRvdAcejCCM7kIZ8v7WmEF2Ikj1n4h8XapQksh1GNbp-ZGZdUUDb9. Conference Name: IEEE Transactions on Geoscience and Remote Sensing.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4288391486",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/tgrs.2022.3194732",
+        "arxiv_id": ""
+      }
+    },
+    "5dba17d6ce3fbcf2600739fa48318dcf7ff2e6a6": {
+      "bib_entry_raw": "Bo Ren, Yangyang Zhao, Biao Hou, Jocelyn Chanussot, and Licheng Jiao. A Mutual Information-Based Self-Supervised Learning Model for PolSAR Land Cover Classification. IEEE Transactions on Geoscience and Remote Sensing, 59(11):9224–9237, November 2021. ISSN 1558-0644. doi: 10.1109/TGRS.2020.3048967. URL https://ieeexplore.ieee.org/abstract/document/9329052?casa_token=UUF6qpE-r0QAAAAA:mceBByxyEM_behWfPXyKv9oZ2z-vtlX30ruUuVy2QupiQcl9-Rlea-ACcY69DLArLnGbjGx5. Conference Name: IEEE Transactions on Geoscience and Remote Sensing.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3124574862",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/tgrs.2020.3048967",
+        "arxiv_id": ""
+      }
+    },
+    "8c6cfcf22b23be879e39ceb99293977a43e3a2b9": {
+      "bib_entry_raw": "Zaidao Wen, Zhunga Liu, Shuai Zhang, and Quan Pan. Rotation Awareness Based Self-Supervised Learning for SAR Target Recognition with Limited Training Samples. IEEE Transactions on Image Processing, 30:7266–7279, 2021. ISSN 1941-0042. doi: 10.1109/TIP.2021.3104179. URL https://ieeexplore.ieee.org/abstract/document/9515580?casa_token=BWO3M9mYZXoAAAAA:i-CkOsGLldD0a1HbPcHzLhreO_QUKvsZIdI7n8zhp76j-XqTIJ3QxoglHI8_4QJMp8EC00-F. Conference Name: IEEE Transactions on Image Processing.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3194531425",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/tip.2021.3104179",
+        "arxiv_id": ""
+      }
+    },
+    "31bee1718f7537b7eeb9a35eb046f28099abf80a": {
+      "bib_entry_raw": "Yanjie Xu, Hao Sun, Jin Chen, Lin Lei, Kefeng Ji, and Gangyao Kuang. Adversarial Self-Supervised Learning for Robust SAR Target Recognition. Remote Sensing, 13(20):4158, January 2021. ISSN 2072-4292. doi: 10.3390/rs13204158. URL https://www.mdpi.com/2072-4292/13/20/4158. Number: 20 Publisher: Multidisciplinary Digital Publishing Institute.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3207962952",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.3390/rs13204158",
+        "arxiv_id": ""
+      }
+    },
+    "26258435ee73b523f9edcb05ccf2526296ab6ca6": {
+      "bib_entry_raw": "Anastasiia Safonova, Gohar Ghazaryan, Stefan Stiller, Magdalena Main-Knorn, Claas Nendel, and Masahiro Ryo. Ten Deep Learning Techniques to Address Small Data Problems with Remote Sensing. International Journal of Applied Earth Observation and Geoinformation, 125:103569, December 2023. ISSN 1569-8432. doi: 10.1016/j.jag.2023.103569. URL https://www.sciencedirect.com/science/article/pii/S156984322300393X.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W4388792466",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1016/j.jag.2023.103569",
+        "arxiv_id": ""
+      }
+    },
+    "f93d903a86f07c0c2862387ea12bcb4e623afc07": {
+      "bib_entry_raw": "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby. An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. arXiv:2010.11929 [cs], June 2021. URL http://arxiv.org/abs/2010.11929. arXiv: 2010.11929.",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3094502228",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.48550/arxiv.2010.11929",
+        "arxiv_id": ""
+      }
+    },
+    "8b67e8d244858df892c22ba75738c5b635e81371": {
+      "bib_entry_raw": "Abien Fred Agarap. Deep Learning using Rectified Linear Units (ReLU), February 2019. URL http://arxiv.org/abs/1803.08375. arXiv:1803.08375 [cs, stat].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W2792643794",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.48550/arxiv.1803.08375",
+        "arxiv_id": ""
+      }
+    },
+    "c386a23c2ee1b34afe102b500eb077849e628c6d": {
+      "bib_entry_raw": "Djork-Arné Clevert, Thomas Unterthiner, and Sepp Hochreiter. Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs), February 2016. URL http://arxiv.org/abs/1511.07289. arXiv:1511.07289 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W2963285578",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.48550/arxiv.1511.07289",
+        "arxiv_id": ""
+      }
+    },
+    "c2ffdafd7c668e5c537f1f4eb82ba1ac9af2e9b8": {
+      "bib_entry_raw": "Sixiao Zheng, Jiachen Lu, Hengshuang Zhao, Xiatian Zhu, Zekun Luo, Yabiao Wang, Yanwei Fu, Jianfeng Feng, Tao Xiang, Philip H. S. Torr, and Li Zhang. Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers, July 2021. URL http://arxiv.org/abs/2012.15840. arXiv:2012.15840 [cs].",
+      "contained_arXiv_ids": [],
+      "contained_links": [],
+      "ids": {
+        "open_alex_id": "https://openalex.org/W3170841864",
+        "sem_open_alex_id": "",
+        "pubmed_id": "",
+        "pmc_id": "",
+        "doi": "https://doi.org/10.1109/cvpr46437.2021.00681",
+        "arxiv_id": ""
+      }
+    }
+  },
+  "ref_entries": {
+    "988e7544-d3f9-414d-ab0c-76ffc8b46232": {
+      "caption": "Qualitative results for ESAWC land cover classification:  Land cover classification for ESAWC on data from Europe (top row) and South America (bottom row).",
+      "type": "figure"
+    },
+    "2a72ca56-485e-41b4-a108-fb428fbf397c": {
+      "caption": "Correlation plots for MODISVEG prediction finetuning the pretrained model with 100% of the labelled data:  Europe (left column) and South America (right column). Linear fits obtained by ordinary least squares (OLS).",
+      "type": "figure"
+    },
+    "4adc3bc1-38e1-480e-bb82-75d96d8479c8": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "8b630878-a65a-46c7-ae2c-bf561c51cfa5": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "c2f5b80a-c41c-460e-9c41-5719eff77632": {
+      "caption": "Data split: Geographic bands for training/validation/test sets at a ratio of 60:20:20.",
+      "type": "figure"
+    },
+    "accd86d4-4851-4a4c-ba07-0d1f4de10d69": {
+      "caption": "Masked SAR Reconstruction: Masked autoencoder-based reconstruction of SAR amplitude imagery from the validation set. Within each row, we show the masked image (left), reconstruction (centre) and original image (right). A masking ratio of 0.75 was applied to patches of size 16\\times 16 on images of size 448\\times 448.",
+      "type": "figure"
+    },
+    "4d7f7eed-3626-4f83-bb5d-af99cc41fb3c": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "1c60defb-b455-4ab4-8e3b-14a7e8d61c61": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "28fd3158-2c6e-47fd-864f-4b32de1e19fa": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "a37eeeee-fada-47e7-af69-1702a9966860": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "ef0e6cec-0e44-404c-81c9-9d1193ea1813": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "4fa565c0-b799-4a66-bc25-34ae85a4aae9": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "a0824208-6605-4734-87d6-cb4a7ca7933c": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "63a78cb8-1af9-41c2-8920-27630eb3ff98": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "9765c0bd-2ab1-450e-aace-0751efbc25cb": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "f9d2f1bf-af32-48ae-aa2d-21dd6cd931b0": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "aab2f278-054a-417d-b278-f1c4197d76e7": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "062fbb2d-80e5-4e9b-babc-adc3ca339334": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "a7faad8b-6d0f-48ee-92cf-b40393d69a90": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "4f817088-c390-4133-9bab-a24bbb5b2e33": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "ea301f96-0a65-418b-a3fa-cbf6f1c00be1": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "fba59e51-14ad-4889-9dc4-7dbb5e46ce95": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "caf785fa-0f01-4e85-a8ef-604654222d45": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "f0af018a-1c28-4707-b17b-55abc82c5868": {
+      "caption": "NO_CAPTION",
+      "type": "figure"
+    },
+    "eee6a5b5-e366-42a3-91a6-5336c7d8cc01": {
+      "caption": "Training histories for Terra MODIS Vegetation prediction. Datapoints indicated at Epoch 0 are after one epoch of training. Models were not evaluated before the first epoch.",
+      "type": "figure"
+    },
+    "52209047-5718-462b-a888-34dc4103991e": {
+      "caption": "Training histories for ESA World Cover prediction. Datapoints indicated at Epoch 0 are after one epoch of training. Models were not evaluated before the first epoch.",
+      "type": "figure"
+    },
+    "997e9ac0-bf3b-4a66-af6c-47d97f18f9e8": {
+      "caption": "ESA World Cover (ESAWC) segmentation accuracy reported as mIoU: European data is in the pretraining set, and South American data is unseen before the downstream task. Best results for each region in bold.",
+      "type": "table"
+    },
+    "2806c2d5-f2f1-4f0d-8a0c-f95589c79941": {
+      "caption": "Terra MODIS Vegetation (MODISVEG) prediction reported as RMSE (mean vegetation cover %): European data is in the pretraining set, and South American data is unseen before the downstream task. Best results for each region in bold.",
+      "type": "table"
+    },
+    "cb0a88d8-1508-41e2-9f48-0e73d126ccfa": {
+      "caption": "Statistics for S1GRD dataset tiles:. Regions in the pretraining set are shown in bold. Regions used in downstream tasks are shown in italics.",
+      "type": "table"
+    },
+    "fa97e9fb-3b23-4d1b-bf73-dddaf1a9b8d2": {
+      "caption": "Hyperparameter details for MAE pretraining and downstream training on MODISVEG and ESAWC.",
+      "type": "table"
+    }
+  },
+  "sections": {
+    "Introduction": {
+      "text": "Satellite remote sensing has fundamentally changed the way we address climate change, offering large scale, high resolution data for applications such as forest mapping {{cite:b1c06b34d06c7653e80ab0839d5dfa8930fb80f9}}{{cite:af2293d1c79fd5889a6e2ea5ee52db4c61070451}}, wildfire monitoring {{cite:9408887baa2ad2f1fd2c346e444602352ca7a3a2}} and flood detection {{cite:f9b10a76aab2bcecea95fe3b295b678bce574411}}. Data from such tasks is crucial to address problems caused by climate change, but is restricted by the limitations of optical sensing. The inability of these sensors to operate at night, through cloud cover and without atmospheric interference mean that optical data is inappropriate for time sensitive tasks such as natural disaster management {{cite:f9b10a76aab2bcecea95fe3b295b678bce574411}}. Synthetic Aperture Radar (SAR) overcomes these limitations, providing more consistent, all-weather, day-night monitoring capabilities. These enhanced capabilities are invaluable for timely intervention in situations including extreme weather {{cite:259dff436aa779781c6715f564307e3b41be92f7}}, natural disasters {{cite:717a4db728e0e684cfefe8821e63dae3d4a8a559}}, rapid ecological shifts {{cite:9423b7fbc18f4753d70f740358b4d409f1173893}}, and deforestation {{cite:173a4c1cf0d55ca7290fb6cb2315b2d5f6112023}}, all of which have implications for climate change.While SAR's robust capabilities offer a promising avenue for overcoming the challenges associated with optical sensors, it comes with its own set of complexities. The technical demands associated with processing SAR data, including aspects like coherence estimation and interferogram formation, make it challenging to apply conventional machine learning techniques. Such hurdles limit the ease of generating labeled data for supervised learning, limiting SAR's effectiveness in automated analysis.Self-supervised learning offers the advantage of learning directly from the input data without requiring ground truth labels. Methodologies such as those based on contrastive learning {{cite:26bceef523acef2dec8e35057ecaacb9e92da1ac}}, masked image modelling {{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}} and knowledge distillation {{cite:2455c2b4215132403c03a167231765f18468f6a8}} have achieved remarkable successes on RGB image data, yielding significant improvements in various tasks such as image classification, segmentation, and object detection {{cite:b45923c8ba4fc0eff3631d1e4d8abe0b2ddbf8e7}}{{cite:1c1e294ce21e5f36da3ee6858172f7700bf8b988}}, reducing dependency on labelled data. Despite these advancements, the application of self-supervised learning to SAR data remains relatively unexplored {{cite:2a0ac32adce91d962adc497bfe1f94cd68a6a7c6}}. Approaches based on data fusion with other remote sensing data sources such as RGB satellite or aerial imagery exist {{cite:91c8487c1137c03f11b3b1a042abf276d140ede2}}{{cite:5dfb023b4dae283c2d1645630a1dbe702c229df9}}, but although these approaches can exploit the specifics of SAR data, they may not be robust to the absence of usable RGB data at night or under cloud cover. A small number of methods operating solely on SAR data exist {{cite:5dba17d6ce3fbcf2600739fa48318dcf7ff2e6a6}}{{cite:8c6cfcf22b23be879e39ceb99293977a43e3a2b9}}{{cite:31bee1718f7537b7eeb9a35eb046f28099abf80a}}, but have not yet clearly shown the geographic or temporal generalisabilty often lacking in remote sensing models {{cite:26258435ee73b523f9edcb05ccf2526296ab6ca6}}. Applying self-supervised learning directly to the large amounts of available unlabelled SAR data would allow practitioners to circumvent the limitations posed by the absence of reliable RGB data at night or in cloudy conditions - improving accuracy and response time in areas such as disaster management and environmental monitoring. Moreover, the use of large-scale, geographically diverse data with a model large enough to accommodate it has the potential to overcome the generalisability issues that often plague remote sensing models, presenting a robust alternative solely based on SAR data.In this work, we take a self-supervised pretraining scheme - masked autoencoding {{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}} - that has been proven effective on curated RGB imagery, and apply it to polarimetric SAR data on a large set of data covering 8.7% of the Earth's land surface. We finetune the pretrained model on two downstream tasks - vegetation cover prediction (per-image regression) and land cover classification (semantic segmentation). We show that, in all cases, pretraining improved performance on downstream tasks. We also show that models initialized with pretrained weights still outperform their randomly initialized counterparts when using substantially fewer labels. We show that the pretrained model generalised well to regions that were not seen in the pretraining set.",
+      "cite_spans": [
+        {
+          "start": 169,
+          "end": 218,
+          "text": "{{cite:b1c06b34d06c7653e80ab0839d5dfa8930fb80f9}}",
+          "ref_id": "b1c06b34d06c7653e80ab0839d5dfa8930fb80f9"
+        },
+        {
+          "start": 218,
+          "end": 267,
+          "text": "{{cite:af2293d1c79fd5889a6e2ea5ee52db4c61070451}}",
+          "ref_id": "af2293d1c79fd5889a6e2ea5ee52db4c61070451"
+        },
+        {
+          "start": 289,
+          "end": 338,
+          "text": "{{cite:9408887baa2ad2f1fd2c346e444602352ca7a3a2}}",
+          "ref_id": "9408887baa2ad2f1fd2c346e444602352ca7a3a2"
+        },
+        {
+          "start": 359,
+          "end": 408,
+          "text": "{{cite:f9b10a76aab2bcecea95fe3b295b678bce574411}}",
+          "ref_id": "f9b10a76aab2bcecea95fe3b295b678bce574411"
+        },
+        {
+          "start": 755,
+          "end": 804,
+          "text": "{{cite:f9b10a76aab2bcecea95fe3b295b678bce574411}}",
+          "ref_id": "f9b10a76aab2bcecea95fe3b295b678bce574411"
+        },
+        {
+          "start": 1048,
+          "end": 1097,
+          "text": "{{cite:259dff436aa779781c6715f564307e3b41be92f7}}",
+          "ref_id": "259dff436aa779781c6715f564307e3b41be92f7"
+        },
+        {
+          "start": 1117,
+          "end": 1166,
+          "text": "{{cite:717a4db728e0e684cfefe8821e63dae3d4a8a559}}",
+          "ref_id": "717a4db728e0e684cfefe8821e63dae3d4a8a559"
+        },
+        {
+          "start": 1192,
+          "end": 1241,
+          "text": "{{cite:9423b7fbc18f4753d70f740358b4d409f1173893}}",
+          "ref_id": "9423b7fbc18f4753d70f740358b4d409f1173893"
+        },
+        {
+          "start": 1261,
+          "end": 1310,
+          "text": "{{cite:173a4c1cf0d55ca7290fb6cb2315b2d5f6112023}}",
+          "ref_id": "173a4c1cf0d55ca7290fb6cb2315b2d5f6112023"
+        },
+        {
+          "start": 2043,
+          "end": 2092,
+          "text": "{{cite:26bceef523acef2dec8e35057ecaacb9e92da1ac}}",
+          "ref_id": "26bceef523acef2dec8e35057ecaacb9e92da1ac"
+        },
+        {
+          "start": 2117,
+          "end": 2166,
+          "text": "{{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}",
+          "ref_id": "bc90937654eed0d92c99eb35c4b8bd540650cbc6"
+        },
+        {
+          "start": 2194,
+          "end": 2243,
+          "text": "{{cite:2455c2b4215132403c03a167231765f18468f6a8}}",
+          "ref_id": "2455c2b4215132403c03a167231765f18468f6a8"
+        },
+        {
+          "start": 2414,
+          "end": 2463,
+          "text": "{{cite:b45923c8ba4fc0eff3631d1e4d8abe0b2ddbf8e7}}",
+          "ref_id": "b45923c8ba4fc0eff3631d1e4d8abe0b2ddbf8e7"
+        },
+        {
+          "start": 2463,
+          "end": 2512,
+          "text": "{{cite:1c1e294ce21e5f36da3ee6858172f7700bf8b988}}",
+          "ref_id": "1c1e294ce21e5f36da3ee6858172f7700bf8b988"
+        },
+        {
+          "start": 2666,
+          "end": 2715,
+          "text": "{{cite:2a0ac32adce91d962adc497bfe1f94cd68a6a7c6}}",
+          "ref_id": "2a0ac32adce91d962adc497bfe1f94cd68a6a7c6"
+        },
+        {
+          "start": 2834,
+          "end": 2883,
+          "text": "{{cite:91c8487c1137c03f11b3b1a042abf276d140ede2}}",
+          "ref_id": "91c8487c1137c03f11b3b1a042abf276d140ede2"
+        },
+        {
+          "start": 2883,
+          "end": 2932,
+          "text": "{{cite:5dfb023b4dae283c2d1645630a1dbe702c229df9}}",
+          "ref_id": "5dfb023b4dae283c2d1645630a1dbe702c229df9"
+        },
+        {
+          "start": 3152,
+          "end": 3201,
+          "text": "{{cite:5dba17d6ce3fbcf2600739fa48318dcf7ff2e6a6}}",
+          "ref_id": "5dba17d6ce3fbcf2600739fa48318dcf7ff2e6a6"
+        },
+        {
+          "start": 3201,
+          "end": 3250,
+          "text": "{{cite:8c6cfcf22b23be879e39ceb99293977a43e3a2b9}}",
+          "ref_id": "8c6cfcf22b23be879e39ceb99293977a43e3a2b9"
+        },
+        {
+          "start": 3250,
+          "end": 3299,
+          "text": "{{cite:31bee1718f7537b7eeb9a35eb046f28099abf80a}}",
+          "ref_id": "31bee1718f7537b7eeb9a35eb046f28099abf80a"
+        },
+        {
+          "start": 3414,
+          "end": 3463,
+          "text": "{{cite:26258435ee73b523f9edcb05ccf2526296ab6ca6}}",
+          "ref_id": "26258435ee73b523f9edcb05ccf2526296ab6ca6"
+        },
+        {
+          "start": 4142,
+          "end": 4191,
+          "text": "{{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}",
+          "ref_id": "bc90937654eed0d92c99eb35c4b8bd540650cbc6"
+        }
+      ],
+      "ref_spans": []
+    },
+    "Split": {
+      "text": "Our data comprises four areas of interest (AOIs) - China, the Continental United States (CONUS), Europe and South America. Of these AOIs, three comprise the pretraining set (Europe, CONUS, China). For each AOI, we divide imagery and labels into tiles of size 4480m\\times 4480m and split the resulting tiles using geographic bands into train, validation and test sets, to avoid data leakage on contiguous tiles as much as possible (Appendix REF ). We used data from 2020 exclusively in this work to avoid the computational expense of preprocessing datasets from multiple years. Since the Earth is finite, it is feasible to pretrain a model on the entire planet, so future work should focus whether our approach also generalises temporally.",
+      "cite_spans": [],
+      "ref_spans": []
+    },
+    "Input Data": {
+      "text": "For all tasks, we derived input data from ESA Sentinel-1 Level 1 Ground Range Detected SAR (S1GRD) amplitude data, tiled from Google Earth Engine using geetileshttps://github.com/rramosp/geetiles We used seasonal averages (spring, summer, autumn, winter) in two acquisition modes and their logarithmic difference (VV, VH, VV-VH) as input, totalling 12 channels. The resolution of S1GRD imagery is approximately 10m/pixel.",
+      "cite_spans": [],
+      "ref_spans": []
+    },
+    "Task Labels": {
+      "text": "Vegetation cover percentage labels were obtained from the Terra MODIS Vegetation Continuous Fields product (MODISVEG), available in Google Earth Engine as MOD44B.006https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44B. The resolution of the MODISVEG product is approximately 250m/pixel. We predicted the mean value of vegetation cover within each tile (percentage area covered by vegetation). Land cover classification labels were obtained from the ESA World Cover product (ESAWC), also from Google Earth Enginehttps://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v200. The resolution of the ESAWC dataset is approximately 10m/pixel, and spans 11 land cover classes. We report segmentation accuracy using mean intersection-over-union (mIoU). For both tasks, we evaluated downstream performance on one region within (Europe) and one outside (South America) the pretraining set. In all cases we trained one model from scratch and one with an encoder pretrained using masked autoencoding. We do not compare results directly to other work on the same datasets to avoid conflating performance differences due to the methods and architectures we chose when developing our model with those due to differences in input data type or SAR preprocessing differences.",
+      "cite_spans": [],
+      "ref_spans": []
+    },
+    "Models": {
+      "text": "For pretraining we used a masked autoencoder with a ViT-B {{cite:f93d903a86f07c0c2862387ea12bcb4e623afc07}} encoder followed by a reconstruction decoder based on {{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}. We motivate our model selection by the observation that the original masked autoencoder behaves reasonably with minimal data augmentation {{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}. Selecting appropriate data augmentations for SAR data introduces additional complexity compared to RGB data - for example, rotation or flipping may introduce invariance to information specific to each polarisation of the instrument. A contrastive approach based on two different SAR modes {{cite:26bceef523acef2dec8e35057ecaacb9e92da1ac}} - for example, polarimetry with two different polarisations or polarimetry and another mode such as coherence - may similarly neglect information specific to each mode. We therefore choose to omit comparison to additional methods in this short work, although future comparison remains of interest.We applied two modifications to the model - we use 12 channels, as described in Section REF , and reduce the patch size from 32 to 16 - the same size in pixels as per the original implementation, but smaller relative to our input image size of 448\\times 448, therefore resulting in a longer sequence input to the transformer encoder. We motivate this change with the observation that distant pixels in remote sensing imagery are less likely to be correlated than distant pixels in a curated photograph. See Appendices REF  and REF  for qualitative reconstruction results and hyperparameter details.For the MODISVEG task, we replaced the reconstruction decoder with a regression head comprising 1D convolutions, of output dimension 196, in both the sequence and hidden dimensions, followed by 3 fully connected layers of sizes {512, 256, 128}. We use ReLU {{cite:8b67e8d244858df892c22ba75738c5b635e81371}} activation functions between hidden layers and ELU {{cite:c386a23c2ee1b34afe102b500eb077849e628c6d}} before the regression output.For the ESAWC task, we followed SETR-PUP {{cite:c2ffdafd7c668e5c537f1f4eb82ba1ac9af2e9b8}}. We increase the number of decoder layers compared to the original implementation to maintain a maximum upsampling of 2\\times  per layer.",
+      "cite_spans": [
+        {
+          "start": 58,
+          "end": 107,
+          "text": "{{cite:f93d903a86f07c0c2862387ea12bcb4e623afc07}}",
+          "ref_id": "f93d903a86f07c0c2862387ea12bcb4e623afc07"
+        },
+        {
+          "start": 162,
+          "end": 211,
+          "text": "{{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}",
+          "ref_id": "bc90937654eed0d92c99eb35c4b8bd540650cbc6"
+        },
+        {
+          "start": 351,
+          "end": 400,
+          "text": "{{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}",
+          "ref_id": "bc90937654eed0d92c99eb35c4b8bd540650cbc6"
+        },
+        {
+          "start": 691,
+          "end": 740,
+          "text": "{{cite:26bceef523acef2dec8e35057ecaacb9e92da1ac}}",
+          "ref_id": "26bceef523acef2dec8e35057ecaacb9e92da1ac"
+        },
+        {
+          "start": 1893,
+          "end": 1942,
+          "text": "{{cite:8b67e8d244858df892c22ba75738c5b635e81371}}",
+          "ref_id": "8b67e8d244858df892c22ba75738c5b635e81371"
+        },
+        {
+          "start": 1994,
+          "end": 2043,
+          "text": "{{cite:c386a23c2ee1b34afe102b500eb077849e628c6d}}",
+          "ref_id": "c386a23c2ee1b34afe102b500eb077849e628c6d"
+        },
+        {
+          "start": 2114,
+          "end": 2163,
+          "text": "{{cite:c2ffdafd7c668e5c537f1f4eb82ba1ac9af2e9b8}}",
+          "ref_id": "c2ffdafd7c668e5c537f1f4eb82ba1ac9af2e9b8"
+        }
+      ],
+      "ref_spans": []
+    },
+    "ESAWC": {
+      "text": "Quantitative results for the ESAWC task are presented in Table REF , and qualitative results in Figure REF . In the fully supervised cases, both with and without pretraining and in the regions within (Europe) and outside (South America) the pretraining set, the model was skillful in classifying land cover (Best mIoU Europe: 0.533, South America: 0.426). For a fixed number of labels, in all cases, performance was improved by pretraining the encoder using masked autoencoding. The effect of pretraining on downstream performance increased when the downstream task inputs were from outside the pretraining set - using the South American data downstream, the model using the pretrained encoder and 10% of the labelled data (mIoU: 0.399) outperformed the randomly initialised, fully supervised model trained with 100% of available data (mIoU: 0.393). When performing the same ablation on the European data, the pretrained model using 10% of the downstream labels (mIoU: 0.508) did not outperform the randomly initialised, fully supervised model (mIoU: 0.522).\n{{table:997e9ac0-bf3b-4a66-af6c-47d97f18f9e8}}{{figure:988e7544-d3f9-414d-ab0c-76ffc8b46232}}",
+      "cite_spans": [],
+      "ref_spans": [
+        {
+          "start": 1059,
+          "end": 1105,
+          "text": "{{table:997e9ac0-bf3b-4a66-af6c-47d97f18f9e8}}",
+          "ref_id": "997e9ac0-bf3b-4a66-af6c-47d97f18f9e8"
+        },
+        {
+          "start": 1105,
+          "end": 1152,
+          "text": "{{figure:988e7544-d3f9-414d-ab0c-76ffc8b46232}}",
+          "ref_id": "988e7544-d3f9-414d-ab0c-76ffc8b46232"
+        }
+      ]
+    },
+    "MODISVEG": {
+      "text": "Quantitative results for the MODISVEG task are presented in Table REF , and correlation plots in Figure REF . In all fully supervised cases the model was skillful in predicting mean vegetation cover percentage, and pretraining using masked autoencoding improved performance in all cases. The effect of pretraining was very strong for this task - the pretrained model needed an order of magnitude less data than the randomly initialised model to achieve the same or greater performance for all data percentages in both regions. Again, the effect of pretraining increased in the region outside of the pretraining set (South America), with the pretrained model tuned using 1% of the task labels (RMSE 8.390 Veg %) outperforming the fully supervised randomly initialised model (RMSE 8.883 Veg %). For the model tuned on the European data, the pretrained model using 10% of the task labels (RMSE 3.282 Veg %) outperformed the fully supervised, randomly initialised model (RMSE 3.749 Veg %),\n{{table:2806c2d5-f2f1-4f0d-8a0c-f95589c79941}}although the model tuned with 1% of the task labels did not (RMSE 4.082 Veg %). It is unclear if the improved label efficiency for regions outside the training set is due to geographic diversity or due to the encoder being trained on a larger combined set of pretraining and training tiles.\n{{figure:2a72ca56-485e-41b4-a108-fb428fbf397c}}",
+      "cite_spans": [],
+      "ref_spans": [
+        {
+          "start": 986,
+          "end": 1032,
+          "text": "{{table:2806c2d5-f2f1-4f0d-8a0c-f95589c79941}}",
+          "ref_id": "2806c2d5-f2f1-4f0d-8a0c-f95589c79941"
+        },
+        {
+          "start": 1323,
+          "end": 1370,
+          "text": "{{figure:2a72ca56-485e-41b4-a108-fb428fbf397c}}",
+          "ref_id": "2a72ca56-485e-41b4-a108-fb428fbf397c"
+        }
+      ]
+    },
+    "Conclusions": {
+      "text": "Satellite remote sensing with Synthetic Aperture Radar (SAR) offers significant advantages over optical sensors, notably the ability to operate in all-weather conditions and during both day and night. These capabilities are essential for timely responses in climate change mitigation and natural disaster management. Processing and labelling this data, however, is subject to substantially more complexity. In this context, we showed that self-supervised pretraining on SAR data using masked autoencoding dramatically reduces the label requirements for effective performance in downstream tasks. The benefits of pretraining were particularly pronounced for geographic regions not seen during pretraining. By reducing label requirements and improving geographic generalisability, our work enables the application of deep learning to SAR for all-weather, day-night monitoring - significantly improving our capability to address climate change on a near-real-time basis. This enhanced monitoring frequency is crucial during extreme weather events, natural disasters, and rapid ecological changes, allowing for more timely intervention and mitigation strategies.This work has been enabled by Frontier Development Lab Europe (https://fdleurope.org) a public / private partnership between the European Space Agency (ESA), Trillium Technologies, the University of Oxford and leaders in commercial AI supported by Google Cloud and Nvidia, developing open science for all Humankind. L.M-F. was supported by the European Research Council (ERC) Synergy Grant “Understanding and Modelling the Earth System with Machine Learning (USMILE)” under the Horizon 2020 research and innovation programme (Grant agreement No. 855187). M. J. A. was supported by the UKRI Centre for Doctoral Training in Application of Artificial Intelligence to the study of Environmental Risks [EP/S022961/1], and additionally by Trinity Hall, Cambridge. We are also indebted to Nicolas Longépé, Carlos López-Martínez, Fabio A. González Osorio, Samuel Bancroft, Emma Hatton, Alison Lowndes, Alistair Francis, Ioanna Bouri and the rest of reviewers during 2023 FDL-Europe sprint.figuresection\ntablesection",
+      "cite_spans": [],
+      "ref_spans": []
+    },
+    "Data Split ": {
+      "text": "We used repeated geographic bands to define our training, validation and test sets. These bands can be seen for the four AOIs in Figure REF . Coverage was determined by intersection with the coverage of the ARIA S1 GUNW datasethttps://asf.alaska.edu/data-sets/derived-data-sets/sentinel-1-interferograms/, which was not used in this work. This approach minimises data leakage compared with a fully randomised split, while also reducing the train-test distribution shift that would occur when using one geographically contiguous band for each set. Data was split into the training, validation and test sets at a 60:20:20 ratio. A total of 737,050 tiles were generated, spanning an area of 1.4793\\times 10^7km^2. See Table REF  for a breakdown by AOI.\n{{figure:c2f5b80a-c41c-460e-9c41-5719eff77632}}{{table:cb0a88d8-1508-41e2-9f48-0e73d126ccfa}}",
+      "cite_spans": [],
+      "ref_spans": [
+        {
+          "start": 750,
+          "end": 797,
+          "text": "{{figure:c2f5b80a-c41c-460e-9c41-5719eff77632}}",
+          "ref_id": "c2f5b80a-c41c-460e-9c41-5719eff77632"
+        },
+        {
+          "start": 797,
+          "end": 843,
+          "text": "{{table:cb0a88d8-1508-41e2-9f48-0e73d126ccfa}}",
+          "ref_id": "cb0a88d8-1508-41e2-9f48-0e73d126ccfa"
+        }
+      ]
+    },
+    "SAR Reconstructions ": {
+      "text": "Reconstructions by the masked autoencoder of SAR data masked during pretraining can be seen in Figure REF . Note that the explicit aim of pretraining is to learn input features, not to obtain high reconstruction accuracy. The model largely predicts low-frequency features, as in {{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}.\n{{figure:accd86d4-4851-4a4c-ba07-0d1f4de10d69}}",
+      "cite_spans": [
+        {
+          "start": 279,
+          "end": 328,
+          "text": "{{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}",
+          "ref_id": "bc90937654eed0d92c99eb35c4b8bd540650cbc6"
+        }
+      ],
+      "ref_spans": [
+        {
+          "start": 330,
+          "end": 377,
+          "text": "{{figure:accd86d4-4851-4a4c-ba07-0d1f4de10d69}}",
+          "ref_id": "accd86d4-4851-4a4c-ba07-0d1f4de10d69"
+        }
+      ]
+    },
+    "Training Details ": {
+      "text": "Hyperparameter details for MAE-based pretraining and task finetuning can be seen in Table REF . The patch size was halved relative to the size of the image compare to {{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}, based on the intuition that distant pixels in remote sensing imagery are less likely to be correlated than distant pixels in curated photographs. This intuition appeared to be evidenced by linear probe performance on the validation data for vegetation prediction, although we do not report the results from the linear probe as it was not used on all tasks or regions. Beyond this, the probe was not used to make further design decisions. Increasing or decreasing the learning rate by an order of magnitude did not improve convergence on the validation data. No significant hyperparameter tuning was undertaken beyond these two decisions, as the computational expense of performing an equal level of tuning for all tasks and regions was too high.\n{{table:fa97e9fb-3b23-4d1b-bf73-dddaf1a9b8d2}}",
+      "cite_spans": [
+        {
+          "start": 167,
+          "end": 216,
+          "text": "{{cite:bc90937654eed0d92c99eb35c4b8bd540650cbc6}}",
+          "ref_id": "bc90937654eed0d92c99eb35c4b8bd540650cbc6"
+        }
+      ],
+      "ref_spans": [
+        {
+          "start": 964,
+          "end": 1010,
+          "text": "{{table:fa97e9fb-3b23-4d1b-bf73-dddaf1a9b8d2}}",
+          "ref_id": "fa97e9fb-3b23-4d1b-bf73-dddaf1a9b8d2"
+        }
+      ]
+    },
+    "Training Histories ": {
+      "text": "Training histories for MODISVEG and ESAWC can be seen in Figures REF  and REF  respectively. We did not tune the optimiser extensively, beyond changing the learning rate to achieve a reasonable rate of convergence. Note that the model was not evaluated before the first epoch (Epoch 0), so datapoints indicated at Epoch 0 are after one epoch of training.\n{{figure:eee6a5b5-e366-42a3-91a6-5336c7d8cc01}}{{figure:52209047-5718-462b-a888-34dc4103991e}}",
+      "cite_spans": [],
+      "ref_spans": [
+        {
+          "start": 355,
+          "end": 402,
+          "text": "{{figure:eee6a5b5-e366-42a3-91a6-5336c7d8cc01}}",
+          "ref_id": "eee6a5b5-e366-42a3-91a6-5336c7d8cc01"
+        },
+        {
+          "start": 402,
+          "end": 449,
+          "text": "{{figure:52209047-5718-462b-a888-34dc4103991e}}",
+          "ref_id": "52209047-5718-462b-a888-34dc4103991e"
+        }
+      ]
+    }
+  }
+}
